@@ -1,37 +1,60 @@
+# MyFinance
 
-# MyFinance - Personal Finance Manager (Demo)
+A lightweight web-based finance tracker built with PHP and MariaDB. This project allows users to log in (without authentication), manage simple income/expense entries, search through past transactions, and track their balance in a dashboard interface.
 
-## ✅ 功能簡介
-- 使用者登入/註冊
-- 新增收入與支出
-- 類別分類與搜尋
-- 圖表顯示（靜態/動態）
+---
 
-## 🛠 安裝步驟（Raspberry Pi）
+## 🔧 Features
 
-1. 安裝套件
-```bash
-sudo apt update
-sudo apt install apache2 php mariadb-server php-mysql unzip
+* Simple login with any credentials (no user verification)
+* Add, view, and manage income or expense records
+* Search records by keyword (e.g., description or category)
+* Summary balance display
+* Minimal, clean frontend using HTML/CSS/JS
+* Easy deployment with XAMPP
+
+---
+
+## 📁 Project Structure
+
+```
+myfinance-project/
+├── config/             # PHP configuration files (database, security)
+├── css/                # Stylesheets
+├── js/                 # JavaScript files
+├── pages/              # HTML pages (login, myfinance)
+├── page_php/           # PHP backend logic (login_process, data handling)
+├── database/           # SQL files for schema or demo data
+├── index.php           # Main entry point
 ```
 
-2. 匯入資料表與測試資料
-```bash
-sudo mysql -u root -p < init.sql
-```
+---
 
-3. 將專案放到伺服器目錄
-```bash
-sudo cp -r MyFinance_With_PHP /var/www/html/myfinance
-```
+## 🚀 Installation
 
-4. 訪問網站
-- 在瀏覽器輸入 `http://<IP>/myfinance/pages/login.html`
+See `Installation.md` for full setup instructions using XAMPP.
 
-## 🔐 測試帳號
-- Email: `test@example.com`
-- 密碼: `123456`
+---
 
-## 📌 注意事項
-- `config.php` 中請修改為你實際的 root 密碼
-- `save_transaction.php` 需要傳入 category 的 ID（請從資料庫中查）
+## 🧭 Usage Guide
+
+See `UserGuide.md` for details on login behavior, dashboard functions, and how to interact with the system.
+
+---
+
+## ⚠️ Disclaimer
+
+This system is for demonstration purposes only:
+
+* No password authentication or encryption is implemented
+* All users share the same access
+* Not suitable for production use without security enhancements
+
+---
+
+## 👩‍💻 Tech Stack
+
+* PHP (Server-side)
+* MariaDB (Database)
+* HTML, CSS, JavaScript
+* XAMPP (Apache + MySQL)
