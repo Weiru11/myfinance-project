@@ -40,7 +40,7 @@ After logging in, you are directed to the main dashboard where you can:
 ### 🔍 Search Records (`keyword_search.php`)
 
 * Navigate to the "Search Records" page from the navigation menu
-* Enter a keyword (e.g., food, taxi)
+* Enter a keyword (e.g., food, Transport)
 * Optionally filter by category or date range
 * Results will show all matching transactions
 
@@ -49,7 +49,6 @@ After logging in, you are directed to the main dashboard where you can:
 ### 📅 Monthly Summary (`monthly_summary.php`)
 
 * Navigate to the "Monthly Summary" page
-* Select a month and year
 * The page displays monthly totals and visual charts to summarize spending patterns
 
 ---
