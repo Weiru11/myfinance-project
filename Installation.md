@@ -18,33 +18,39 @@ This document provides step-by-step instructions to install and run the MyFinanc
 
 ### 🚀 Installation Steps
 
-#### 1. Install XAMPP
+#### 1. Download the Project from GitHub
 
-* Visit the [XAMPP website](https://www.apachefriends.org/index.html) and download the Windows version.
-* Run the installer and select Apache and MySQL (default options).
-* After installation, open the `XAMPP Control Panel` and start:
+* Visit the project repository (e.g., `https://github.com/your-username/myfinance`)
+* Click the green **"Code"** button, then select **"Download ZIP"**
+* Unzip the downloaded file
+* Rename the extracted folder to `myfinance`
+
+#### 2. Move Project to XAMPP
+
+* Copy the entire `myfinance` folder to the `htdocs` directory of XAMPP:
+
+  * Example: `C:/xampp/htdocs/myfinance`
+
+#### 3. Start XAMPP Services
+
+* Open the `XAMPP Control Panel`
+* Start the following modules:
 
   * ✅ Apache
   * ✅ MySQL
 
-#### 2. Place Project Files
-
-* Unzip the file `finance-2-fixed.zip`
-* Rename the extracted folder to `myfinance`
-* Copy the entire folder to the `htdocs` directory in XAMPP:
-
-  * Example: `C:/xampp/htdocs/myfinance`
-
-#### 3. Create Database
+#### 4. Create the Database
 
 * Open your browser and go to `http://localhost/phpmyadmin`
 * Click "New" on the left to create a new database:
 
   * Database name: `myfinance`
   * Collation: `utf8_general_ci`
-* Import SQL file: If the project includes `myfinance.sql` or `schema.sql`, click "Import" and upload the file.
+* Import SQL file:
 
-#### 4. Configure Database Connection
+  * If the project includes `myfinance.sql` or `schema.sql`, click "Import" and upload the file
+
+#### 5. Configure Database Connection
 
 * Open `config/database.php` or `config/database_config.php`
 * Modify the settings as follows:
@@ -80,3 +86,4 @@ You should now see the login page. Enter any email and password to access the da
 | SQL import fails   | Make sure to select the correct database before importing SQL file |
 
 If problems persist, check your database configuration in the `config/` folder or confirm that Apache and MySQL are both running in XAMPP.
+
