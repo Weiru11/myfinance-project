@@ -54,13 +54,11 @@ This document provides step-by-step instructions to install and run the MyFinanc
 
 * Open `config/database_config.php`
 * Modify the settings as follows:
-
-```php
-$host = 'localhost';
-$dbname = 'myfinance';
-$user = 'root';
-$pass = ''; // Default XAMPP root has no password
-```
+  
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'myfinance');
+define('DB_USER', 'root');
+define('DB_PASS', ''); // XAMPP default password is empty
 
 ---
 
