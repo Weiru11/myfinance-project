@@ -9,8 +9,8 @@ This is a lightweight personal finance tracker designed for individual use. It a
 ### 🚪 Login
 
 * Visit the login page (`login.php`)
-* Enter any email and password
-* The system accepts any input and grants access
+* Enter email :example@email.com and password :123456
+* The system only accepts this email and password access
 * Once logged in, your session remains active until logout or browser close
 
 ---
@@ -62,7 +62,6 @@ After logging in, you are directed to the main dashboard where you can:
 
 ### 🧪 Notes
 
-* This system does not validate user accounts — login accepts any input
 * All data is stored per session and managed in the database
 * Intended for demonstration purposes
 
