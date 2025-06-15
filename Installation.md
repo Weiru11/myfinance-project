@@ -52,7 +52,7 @@ This document provides step-by-step instructions to install and run the MyFinanc
 
 #### 5. Configure Database Connection
 
-* Open `config/database.php` or `config/database_config.php`
+* Open `config/database_config.php`
 * Modify the settings as follows:
 
 ```php
