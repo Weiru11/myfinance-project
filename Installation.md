@@ -70,7 +70,7 @@ Open your browser and navigate to:
 http://localhost/myfinance/
 ```
 
-You should now see the login page. Enter any email and password to access the dashboard.
+You should now see the login page.
 
 ---
 
