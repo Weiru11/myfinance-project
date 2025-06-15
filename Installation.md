@@ -48,7 +48,7 @@ This document provides step-by-step instructions to install and run the MyFinanc
   * Collation: `utf8_general_ci`
 * Import SQL file:
 
-  * If the project includes `myfinance.sql` or `schema.sql`, click "Import" and upload the file
+  * If the project includes `init.sql` , click "Import" and upload the file
 
 #### 5. Configure Database Connection
 
